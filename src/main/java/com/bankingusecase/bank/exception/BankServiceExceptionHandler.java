@@ -18,6 +18,6 @@ public class BankServiceExceptionHandler {
     {
         ErrorMessage errorMessage = new ErrorMessage(new Date(), ex.getMessage());
 
-        return new ResponseEntity<>(errorMessage, new HttpHeaders(), HttpStatus.BAD_REQUEST);
+        return new ResponseEntity<>(errorMessage, new HttpHeaders(), HttpStatus.NOT_FOUND);
     }
 }
